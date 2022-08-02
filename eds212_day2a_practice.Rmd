@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "Day 2 Part 1 tutorial"
 author: "Mallory Giesie"
 date: "8/2/2022"
 output: html_document
@@ -8,4 +8,29 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+## Derivative Practice
+Find the derivative of $f(x) = 5x^2$
+```{r}
+ex_1 <- expression(5 * x ^ 2)
+
+my_derivative <- deriv(ex_1, "x")
+
+x <- seq(from = 2.8, to = 5.7, by = .1)
+
+eval(my_derivative)
+```
+Find the slope of $g(z) = 2z^3-10.5z^2+4.1$
+```{r}
+
+gz <- expression(2 * z^3 - 10.5 * z^2 + 4.1)
+
+dg_dz <- deriv(gz, "z")
+dg_dz
+
+z<- c(1,2,3)
+
+eval(dg_dz)
+```
+
 
