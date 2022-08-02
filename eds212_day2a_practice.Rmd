@@ -33,5 +33,4 @@ z<- c(1,2,3)
 eval(dg_dz)
 ```
 practice
-
 more practice 
