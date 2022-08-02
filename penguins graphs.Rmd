@@ -10,8 +10,13 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(palmerpenguins)
 ```
+Scatterplot of body mass versus flipper length
+three minimum things: 
+using gg plot 
 ```{r}
-view(penguins)
+ggplot(data = penguins, aes(x = body_mass_g, y = flipper_length_mm)) + geom_point(aes(color = species))
+
 ```
+Testing hello
 
 
