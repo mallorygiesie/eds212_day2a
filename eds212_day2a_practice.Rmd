@@ -4,7 +4,7 @@ author: "Mallory Giesie"
 date: "8/2/2022"
 output: html_document
 ---
-
+use
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -32,5 +32,6 @@ z<- c(1,2,3)
 
 eval(dg_dz)
 ```
+practice
 
 
